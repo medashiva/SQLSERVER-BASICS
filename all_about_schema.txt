@@ -39,6 +39,26 @@ Note: GO instructs the SQL server management studio to send the SQL statements u
 ---------------------------------*** End of alter schema ***--------------------------------------
 
 
+---------------------------------*** GET ALL SCHEMAS with owner ***-----------------------------------------
+
+select * from sys.schemas 
+
+above will list out all schemas in databse.
+
+select s.name as schema_name
+       u.name as schema_owner
+FROM sys.schemas as s
+
+INNER JOIN sys.sysusers u ON u.id = s.principal_id
+
+ORDER BY s.name
+
+---------------------------------*** End of GET ALL SCHEMAS with owner ***--------------------------------------
+
+
+
+
+
 
 
 
