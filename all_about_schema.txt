@@ -1,0 +1,54 @@
+A schema is a collection of database objects.
+
+A database may have multiple schemas.
+
+two tables in schema can share the same name
+
+example :
+
+sales.employees
+hr.employees
+
+
+buil-in schemas in sql server 
+
+dbo
+guest
+sys (you can not create and drop tables, bcz it is reserved by SQL server)
+INFORMATION_SCHEMA(you can not create and drop tables, bcz it is reserved by SQL server)
+
+---------------------------------*** create schema ***--------------------------------------------
+Creating the schema:
+
+CREATE SCHEMA sales AUTHORIZATION [dbo];
+GO
+
+Note: GO instructs the SQL server management studio to send the SQL statements up to GO statment
+---------------------------------*** End of Create schema ***--------------------------------------
+
+
+---------------------------------*** alter schema ***--------------------------------------------
+Creating the schema:
+we are changing the users schema from dbo to hr.
+dbo.users to hr.users
+
+ALTER SCHEMA hr Transfer dbo.users;
+GO
+
+Note: GO instructs the SQL server management studio to send the SQL statements up to GO statment
+---------------------------------*** End of alter schema ***--------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
