@@ -1,1 +1,5 @@
+Get Your SQLSERVER version 
+  select @@VERSION
+  select @@version
+  
 
