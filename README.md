@@ -1,2 +1,2 @@
 # SQLSERVER-BASICS
-Sql Service Basics
+Sql Server Basics
