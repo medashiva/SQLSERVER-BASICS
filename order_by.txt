@@ -1,0 +1,16 @@
+Sort a result set by one column in ascending order(ORDER BY columnname)
+Sort a result set by one column in descending order (ORDER BY columnname desc)
+Sort a result set by multiple columns (order by columnname1, columname2)
+Sort a result set by multiple columns and different orders(order by columnname1 asc, columname2 desc)
+Sort a result set by a column that is not in the select list---imp
+Sort a result set by an expression (ORDER BY LEN(columnname) DESC)
+
+
+example:
+SELECT
+    first_name,
+    last_name
+FROM
+    sales.customers
+ORDER BY
+    LEN(first_name) DESC;
