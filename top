@@ -1,0 +1,11 @@
+top 3 records
+
+SELECT top 3  [id]
+      ,[first_name]
+      ,[last_name]
+      ,[visited_at]
+      ,[phone]
+      ,[order_date]
+  FROM [cutomers].[dbo].[customer_address] order by id desc 
+  
+  
