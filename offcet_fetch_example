@@ -1,0 +1,21 @@
+SQL Interview question: Get the 2nd highest number from a column
+First use order by column desc and then use offset 1  rows fetch next 1 rows only
+
+SELECT [id]
+      ,[first_name]
+      ,[last_name]
+      ,[visited_at]
+      ,[phone]
+      ,[order_date]
+  FROM [cutomers].[dbo].[customer_address] order by id desc offset 1 rows fetch next 1 rows only
+
+above one with fetch next, below one fetch first
+
+
+SELECT  [id]
+      ,[first_name]
+      ,[last_name]
+      ,[visited_at]
+      ,[phone]
+      ,[order_date]
+  FROM [cutomers].[dbo].[customer_address] order by id desc offset 0 rows fetch first 10 rows only
